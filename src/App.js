@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import Homepage from "./screens/Homepage";
 import Aboutpage from "./screens/Aboutpage";
@@ -7,22 +7,22 @@ import { AnimatePresence } from "framer-motion";
 import LinksModal from "./components/LinksModal";
 
 const App = () => {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  // const [x, setX] = useState(0);
+  // const [y, setY] = useState(0);
   const [show, setShow] = useState(false);
   const [animate, setAnimate] = useState(false);
 
-  useEffect(() => {
-    const handleMove = ({ pageX: x, pageY: y }) => {
-      setX(x);
-      setY(y);
-    };
+  // useEffect(() => {
+  //   const handleMove = ({ pageX: x, pageY: y }) => {
+  //     setX(x);
+  //     setY(y);
+  //   };
 
-    window.addEventListener("mousemove", handleMove);
-    return () => {
-      window.removeEventListener("mousemove", handleMove);
-    };
-  }, []);
+  //   window.addEventListener("mousemove", handleMove);
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMove);
+  //   };
+  // }, []);
 
   return (
     <Router>

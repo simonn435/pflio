@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import cv from "../assets/CV.pdf";
-import { FaCogs, FaDiceD6 } from "react-icons/fa";
+// import { FaCogs, FaDiceD6 } from "react-icons/fa";
 import descarga from "../assets/descarga.png";
 
 const Aboutpage = () => {
