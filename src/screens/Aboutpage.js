@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import {
   FaBootstrap,
   FaCss3Alt,
@@ -12,15 +12,9 @@ import { SiMaterialUi, SiRedux } from "react-icons/si";
 import cv from "../assets/CV.pdf";
 import descarga from "../assets/descarga.png";
 import Footer from "../components/Footer";
-import { mouseHover } from "../helpers/buttonHover";
+import { handleMove } from "../helpers/buttonHover";
 
 const Aboutpage = () => {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    mouseHover(ref);
-  }, []);
-
   return (
     <>
       <section className="about">
@@ -48,7 +42,12 @@ const Aboutpage = () => {
               skills and knowledge necessary to make your project a success. I
               enjoy every step while working.
             </p>
-            <a ref={ref} href={cv} download className="btn__outline-red">
+            <a
+              onMouseMove={handleMove}
+              href={cv}
+              download
+              className="btn__outline-red"
+            >
               <span>Download CV</span>
             </a>
           </div>

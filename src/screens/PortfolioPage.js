@@ -1,14 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import img from "../assets/portfolio.jpg";
-import { mouseHover } from "../helpers/buttonHover";
+import { handleMove } from "../helpers/buttonHover";
 
 const PortfolioPage = () => {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    mouseHover(ref);
-  }, []);
-
   return (
     <section className="portfolio">
       {/* Header */}
@@ -38,7 +32,7 @@ const PortfolioPage = () => {
             <a
               href="https://dazzling-northcutt-c6821b.netlify.app/"
               className="btn__outline-red"
-              ref={ref}
+              onMouseMove={handleMove}
             >
               <span>View Project</span>
             </a>
@@ -58,8 +52,8 @@ const PortfolioPage = () => {
             </p>
             <a
               href="https://dazzling-northcutt-c6821b.netlify.app/"
+              onMouseMove={handleMove}
               className="btn__outline-red"
-              ref={ref}
             >
               <span>View Project</span>
             </a>
@@ -79,8 +73,8 @@ const PortfolioPage = () => {
             </p>
             <a
               href="https://dazzling-northcutt-c6821b.netlify.app/"
+              onMouseMove={handleMove}
               className="btn__outline-red"
-              ref={ref}
             >
               <span>View Project</span>
             </a>

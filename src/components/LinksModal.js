@@ -3,7 +3,7 @@ import React from "react";
 import DelayLink from "./DelayLink";
 
 const transition = {
-  duration: 1,
+  duration: 0.3,
   ease: [0.43, 0.13, 0.23, 0.96],
 };
 

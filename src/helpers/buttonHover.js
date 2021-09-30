@@ -1,17 +1,7 @@
-export const mouseHover = (ref) => {
-  const myRef = ref.current;
+export const handleMove = (e) => {
+  const x = e.pageX - e.target.offsetLeft + "px";
+  const y = e.pageY - e.target.offsetTop + "px";
 
-  const handleMove = (e) => {
-    const x = e.pageX - myRef.offsetLeft + "px";
-    const y = e.pageY - myRef.offsetTop + "px";
-
-    myRef.style.setProperty("--x", x);
-    myRef.style.setProperty("--y", y);
-  };
-
-  myRef.addEventListener("mousemove", handleMove);
-
-  return () => {
-    myRef.removeEventListener("mousemove", handleMove);
-  };
+  e.target.style.setProperty("--x", x);
+  e.target.style.setProperty("--y", y);
 };
