@@ -50,6 +50,19 @@ const LinksModal = ({ show, setShow, animate, setAnimate }) => {
       >
         About
       </DelayLink>
+
+      <DelayLink
+        delay="800"
+        to="/portfolio"
+        animate={animate}
+        setAnimate={setAnimate}
+        show={show}
+        setShow={setShow}
+        data-text="Portfolio"
+        className="modal__links"
+      >
+        Portfolio
+      </DelayLink>
     </motion.div>
   );
 };

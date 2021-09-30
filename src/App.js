@@ -5,6 +5,7 @@ import Aboutpage from "./screens/Aboutpage";
 import Navbar from "./components/Navbar";
 import { AnimatePresence } from "framer-motion";
 import LinksModal from "./components/LinksModal";
+import PortfolioPage from "./screens/PortfolioPage";
 
 const App = () => {
   // const [x, setX] = useState(0);
@@ -46,6 +47,9 @@ const App = () => {
               </Route>
               <Route exact path="/about">
                 <Aboutpage show={show} setShow={setShow} />
+              </Route>
+              <Route exact path="/portfolio">
+                <PortfolioPage show={show} setShow={setShow} />
               </Route>
             </Switch>
           </AnimatePresence>

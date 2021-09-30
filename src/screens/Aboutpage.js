@@ -5,35 +5,20 @@ import {
   FaGithub,
   FaHtml5,
   FaJs,
-  FaNodeJs,
   FaReact,
   FaSass,
 } from "react-icons/fa";
-import { SiMaterialUi, SiMongodb, SiRedux } from "react-icons/si";
+import { SiMaterialUi, SiRedux } from "react-icons/si";
 import cv from "../assets/CV.pdf";
-// import { FaCogs, FaDiceD6 } from "react-icons/fa";
 import descarga from "../assets/descarga.png";
 import Footer from "../components/Footer";
+import { mouseHover } from "../helpers/buttonHover";
 
 const Aboutpage = () => {
   const ref = useRef(null);
 
   useEffect(() => {
-    const myRef = ref.current;
-
-    const handleMove = (e) => {
-      const x = e.pageX - myRef.offsetLeft + "px";
-      const y = e.pageY - myRef.offsetTop + "px";
-
-      myRef.style.setProperty("--x", x);
-      myRef.style.setProperty("--y", y);
-    };
-
-    myRef.addEventListener("mousemove", handleMove);
-
-    return () => {
-      myRef.removeEventListener("mousemove", handleMove);
-    };
+    mouseHover(ref);
   }, []);
 
   return (
@@ -47,7 +32,7 @@ const Aboutpage = () => {
               <span className="text__red">About</span> Me
             </h3>
             <h5>
-              <span className="text__red">Who</span> am I?
+              <span className="text__red ">Who</span> am I?
             </h5>
           </div>
 
@@ -63,7 +48,7 @@ const Aboutpage = () => {
               skills and knowledge necessary to make your project a success. I
               enjoy every step while working.
             </p>
-            <a ref={ref} href={cv} download className="cv__button">
+            <a ref={ref} href={cv} download className="btn__outline-red">
               <span>Download CV</span>
             </a>
           </div>
