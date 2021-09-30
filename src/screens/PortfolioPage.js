@@ -34,6 +34,7 @@ const PortfolioPage = () => {
               <a
                 href="https://amazing-haibt-ad997d.netlify.app/"
                 target="_blank"
+                rel="noreferrer"
                 className="btn__outline-red"
                 onMouseMove={handleMove}
               >
@@ -55,6 +56,7 @@ const PortfolioPage = () => {
               <a
                 href="https://hardcore-saha-7781d9.netlify.app/"
                 target="_blank"
+                rel="noreferrer"
                 onMouseMove={handleMove}
                 className="btn__outline-red"
               >
@@ -75,6 +77,7 @@ const PortfolioPage = () => {
               <a
                 href="https://serene-northcutt-99ebe3.netlify.app/"
                 target="_blank"
+                rel="noreferrer"
                 onMouseMove={handleMove}
                 className="btn__outline-red"
               >

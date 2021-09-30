@@ -8,16 +8,12 @@ import LinksModal from "./components/LinksModal";
 import PortfolioPage from "./screens/PortfolioPage";
 
 const App = () => {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
   const ref = useRef(null);
   const [show, setShow] = useState(false);
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     const handleMove = ({ pageX: x, pageY: y }) => {
-      setX(x);
-      setY(y);
       const myRef = ref.current;
       myRef.style.setProperty("--xeje", x - 25 + "px");
       myRef.style.setProperty("--yeje", y - 25 + "px");
