@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import Homepage from "./screens/Homepage";
 import Aboutpage from "./screens/Aboutpage";
@@ -8,22 +8,26 @@ import LinksModal from "./components/LinksModal";
 import PortfolioPage from "./screens/PortfolioPage";
 
 const App = () => {
-  // const [x, setX] = useState(0);
-  // const [y, setY] = useState(0);
+  const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
+  const ref = useRef(null);
   const [show, setShow] = useState(false);
   const [animate, setAnimate] = useState(false);
 
-  // useEffect(() => {
-  //   const handleMove = ({ pageX: x, pageY: y }) => {
-  //     setX(x);
-  //     setY(y);
-  //   };
+  useEffect(() => {
+    const handleMove = ({ pageX: x, pageY: y }) => {
+      setX(x);
+      setY(y);
+      const myRef = ref.current;
+      myRef.style.setProperty("--xeje", x - 25 + "px");
+      myRef.style.setProperty("--yeje", y - 25 + "px");
+    };
 
-  //   window.addEventListener("mousemove", handleMove);
-  //   return () => {
-  //     window.removeEventListener("mousemove", handleMove);
-  //   };
-  // }, []);
+    window.addEventListener("mousemove", handleMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMove);
+    };
+  }, []);
 
   return (
     <Router>
@@ -35,6 +39,8 @@ const App = () => {
         animate={animate}
         setAnimate={setAnimate}
       />
+
+      <div className="cursor" ref={ref}></div>
 
       <div className={`breaker ${animate && "active"}`}></div>
 
