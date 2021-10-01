@@ -633,12 +633,17 @@ a {
 .contact {
   background-color: var(--black);
   padding: 50px 0;
+  min-height: 100vh;
 }
 
 .contact__form {
   max-width: 800px;
   margin: auto;
   width: 60%;
+}
+
+.contact__header {
+  text-align: center;
 }
 
 .contact__form-container {
