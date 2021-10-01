@@ -12,12 +12,17 @@ const App = () => {
   const ref = useRef(null);
   const [show, setShow] = useState(false);
   const [animate, setAnimate] = useState(false);
+  const [active, setActive] = useState(true);
 
   useEffect(() => {
     const handleMouseMove = ({ pageX: x, pageY: y }) => {
       const myRef = ref.current;
       myRef.style.setProperty("--x", x - 25 + "px");
       myRef.style.setProperty("--y", y - 25 + "px");
+      myRef.style.setProperty("--scale", 1);
+      if (active) {
+        myRef.style.setProperty("--scale", 5);
+      }
     };
 
     window.addEventListener("mousemove", handleMouseMove);

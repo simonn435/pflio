@@ -34,13 +34,15 @@ const Aboutpage = () => {
 
           <div className="about__content">
             <h3 className="section__title">
-              I'm a dedicated <span className="text__red">web developer</span>{" "}
+              I am a dedicated <span className="text__red">web developer</span>{" "}
               from Argentina
             </h3>
             <p className="section__text">
-              With 2 years of experience as a Web developer, I have adquired the
-              skills and knowledge necessary to make your project a success. I
-              enjoy every step while working.
+              I am passionate about spending time programming and learning how
+              to create different types of applications, as well as working as a
+              team and putting my part in it. I started in the IT world 1 year
+              and a half ago and since then I am motivated to continue learning
+              new things every day.
             </p>
             <a
               onMouseMove={handleMove}
