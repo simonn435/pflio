@@ -13,15 +13,15 @@ const App = () => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    const handleMove = ({ pageX: x, pageY: y }) => {
+    const handleMouseMove = ({ pageX: x, pageY: y }) => {
       const myRef = ref.current;
-      myRef.style.setProperty("--xeje", x - 25 + "px");
-      myRef.style.setProperty("--yeje", y - 25 + "px");
+      myRef.style.setProperty("--x", x - 25 + "px");
+      myRef.style.setProperty("--y", y - 25 + "px");
     };
 
-    window.addEventListener("mousemove", handleMove);
+    window.addEventListener("mousemove", handleMouseMove);
     return () => {
-      window.addEventListener("mousemove", handleMove);
+      window.addEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
