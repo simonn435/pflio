@@ -25,7 +25,7 @@ const Aboutpage = () => {
             <h3 className="section__title">
               <span className="text__red">About</span> Me
             </h3>
-            <h5>
+            <h5 className="section__subheader">
               <span className="text__red ">Who</span> am I?
             </h5>
           </div>

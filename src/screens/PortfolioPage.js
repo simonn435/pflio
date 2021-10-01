@@ -14,7 +14,7 @@ const PortfolioPage = () => {
           <h3 className="section__title portfolio__title">
             My <span className="text__red">Portfolio</span>
           </h3>
-          <h5>
+          <h5 className="section__subheader">
             Some of my <span className="text__red">projects</span>
           </h5>
         </div>

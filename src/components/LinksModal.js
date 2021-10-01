@@ -38,6 +38,7 @@ const LinksModal = ({ show, setShow, animate, setAnimate }) => {
       >
         Home
       </DelayLink>
+
       <DelayLink
         delay="800"
         to="/about"
@@ -62,6 +63,19 @@ const LinksModal = ({ show, setShow, animate, setAnimate }) => {
         className="modal__links"
       >
         Portfolio
+      </DelayLink>
+
+      <DelayLink
+        delay="800"
+        to="/contact"
+        animate={animate}
+        setAnimate={setAnimate}
+        show={show}
+        setShow={setShow}
+        data-text="Contact"
+        className="modal__links"
+      >
+        Contact
       </DelayLink>
     </motion.div>
   );
