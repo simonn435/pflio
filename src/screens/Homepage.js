@@ -10,11 +10,21 @@ const Homepage = () => {
       <header className="header">
         <div className="header__links ">
           <div>
-            <FaLinkedin />
+            <a
+              href="https://www.linkedin.com/in/simon-villaverde-9a850b1b3/"
+              rel="norefereer"
+            >
+              <FaLinkedin />
+            </a>
           </div>
 
           <div>
-            <FaInstagram />
+            <a
+              href="https://www.instagram.com/simonvillaverde_/"
+              rel="norefereer"
+            >
+              <FaInstagram />
+            </a>
           </div>
         </div>
 
@@ -42,16 +52,30 @@ const Homepage = () => {
 
         <div className="header__icons-responsive">
           <div>
-            <FaLinkedin />
+            <a
+              href="https://www.linkedin.com/in/simon-villaverde-9a850b1b3/"
+              rel="norefereer"
+            >
+              <FaLinkedin />
+            </a>
           </div>
           <div>
-            <FaInstagram />
+            <a
+              href="https://www.instagram.com/simonvillaverde_/"
+              rel="norefereer"
+            >
+              <FaInstagram />
+            </a>
           </div>
           <div>
-            <SiGmail />
+            <a href="mailto:simonvillaverde9@gmail.com">
+              <SiGmail />
+            </a>
           </div>
           <div>
-            <IoCall />
+            <a href="tel:+542241585923">
+              <IoCall />
+            </a>
           </div>
         </div>
       </header>

@@ -210,7 +210,7 @@ a {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  z-index: 2;
+  z-index: 200;
 }
 
 .modal__toggler {
@@ -553,6 +553,7 @@ a {
 /* Portfolio */
 .portfolio {
   background-color: var(--black);
+  padding-bottom: 10px;
 }
 
 .portfolio__header {
@@ -572,10 +573,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  position: relative;
 }
 
 .work__img {
+  z-index: 10;
   flex: 30%;
   max-height: 400px;
 }
@@ -589,7 +591,9 @@ a {
 
 .work__content {
   background-color: var(--dark-black);
+  z-index: 100;
   flex: 30%;
+  border-left: 3px solid var(--red);
   padding: 0 40px;
   margin-left: -150px;
   margin-top: 200px;
