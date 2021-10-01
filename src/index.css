@@ -616,6 +616,7 @@ a {
 @media screen and (max-width: 768px) {
   .portfolio__work-container {
     flex-direction: column;
+    padding: 20px 0;
   }
   .work__content {
     background-color: var(--dark-black);
