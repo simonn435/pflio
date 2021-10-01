@@ -19,10 +19,10 @@ const Homepage = () => {
         </div>
 
         <div>
-          <h1 className="header__title asd">
-            <span className="text__red asd">Simon</span> Villaverde
+          <h1 className="header__title ">
+            <span className="text__red ">Simon</span> Villaverde
           </h1>
-          <h2 className="section__title asd header__subtitle">
+          <h2 className="section__title  header__subtitle">
             Front-End developer
           </h2>
         </div>

@@ -21,7 +21,7 @@ const App = () => {
 
     window.addEventListener("mousemove", handleMove);
     return () => {
-      window.removeEventListener("mousemove", handleMove);
+      window.addEventListener("mousemove", handleMove);
     };
   }, []);
 

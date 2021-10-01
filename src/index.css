@@ -63,7 +63,6 @@ a {
   pointer-events: none;
   position: absolute;
   transform: translate3d(var(--xeje), var(--yeje), 0);
-  transition: all 0.1s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -322,6 +321,7 @@ a {
   text-align: center;
   margin: auto;
   padding: 0 10px;
+  z-index: 1;
   font-weight: 300;
 }
 
@@ -329,11 +329,11 @@ a {
   content: "";
   position: absolute;
   top: 0;
+  z-index: -1;
   left: 0;
   height: 100%;
   transition: width 0.4s var(--main-transition);
-  width: 2px;
-  z-index: -1;
+  width: 1px;
   background-color: var(--red);
 }
 
@@ -341,10 +341,10 @@ a {
   content: "";
   position: absolute;
   top: 0;
+  z-index: -1;
   right: 0;
   height: 100%;
-  z-index: -1;
-  width: 2px;
+  width: 1px;
   transition: width 0.4s var(--main-transition);
   background-color: var(--red);
 }
