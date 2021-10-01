@@ -62,11 +62,8 @@ a {
   border-radius: 50%;
   pointer-events: none;
   position: absolute;
-  transform: translate3d(var(--xeje), var(--yeje), 0) scale(1);
-}
-
-.cursor:hover {
-  transform: translate3d(var(--xeje), var(--yeje), 0) scale(4);
+  transform: translate3d(var(--xeje), var(--yeje), 0);
+  transition: all 0.1s ease;
 }
 
 @media screen and (max-width: 768px) {

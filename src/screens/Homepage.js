@@ -29,10 +29,14 @@ const Homepage = () => {
 
         <div className="header__contact">
           <div>
-            <SiGmail />
+            <a href="mailto:simonvillaverde9@gmail.com">
+              <SiGmail />
+            </a>
           </div>
           <div>
-            <IoCall />
+            <a href="tel:+542241585923">
+              <IoCall />
+            </a>
           </div>
         </div>
 

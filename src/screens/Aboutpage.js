@@ -63,37 +63,22 @@ const Aboutpage = () => {
               <div className="services__card">
                 <img className="services__img" src={descarga} alt="" />
                 <h4 className="section__subtitle services__subtitle">
-                  SPA Applications
+                  Frontend
                 </h4>
                 <p className="services__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  consequuntur dignissimos cumque similique provident ducimus
-                  architecto ipsam, beatae enim nostrum voluptatum quibusdam,
-                  praesentium optio iure iusto, tempora velit neque hic?
+                  I use the latest technologies like React to make fast,
+                  responsive and cross-browser web applications.
                 </p>
               </div>
               <div className="services__card">
                 <img className="services__img" src={descarga} alt="" />
                 <h4 className="section__subtitle services__subtitle">
-                  Maintenance and Support
+                  Backend
                 </h4>
                 <p className="services__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  consequuntur dignissimos cumque similique provident ducimus
-                  architecto ipsam, beatae enim nostrum voluptatum quibusdam,
-                  praesentium optio iure iusto, tempora velit neque hic?
-                </p>
-              </div>
-              <div className="services__card">
-                <img className="services__img" src={descarga} alt="" />
-                <h4 className="section__subtitle services__subtitle">
-                  Responsive Design & Cross-Browser
-                </h4>
-                <p className="services__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  consequuntur dignissimos cumque similique provident ducimus
-                  architecto ipsam, beatae enim nostrum voluptatum quibusdam,
-                  praesentium optio iure iusto, tempora velit neque hic?
+                  I can make restful api's with the MERN stack, although I'm not
+                  too good I'm studying every day to become a fullstack
+                  developer.
                 </p>
               </div>
             </div>
